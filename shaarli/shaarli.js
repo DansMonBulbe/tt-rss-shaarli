@@ -1,6 +1,6 @@
 function shaarli(id) {
     try {
-	var query = "?op=pluginhandler&plugin=shaarli&method=getShaarli&id=" + param_escape(id);
+	var query = "?op=pluginhandler&plugin=shaarli&method=getShaarli&id=" + encodeURIComponent(id);
 	
 	console.log(query);
 		
